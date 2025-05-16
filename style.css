@@ -1,0 +1,141 @@
+ body {
+  background: #222;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.bundle-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  color: #ff4d91;
+  margin-bottom: 20px;
+}
+
+.bundle-option {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.option-box {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  position: relative;
+}
+
+.option-box.popular {
+  border-color: #ff4d91;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label .option-box {
+  border-color: #ff4d91;
+  background: #fff0f5;
+}
+
+.left .tag {
+  background: #ff4d91;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+  color: white;
+}
+
+.tag.red {
+  background: #ff4d91;
+  color: white;
+}
+
+.left .label {
+  font-size: 12px;
+  color: gray;
+}
+
+.right {
+  text-align: right;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.strike {
+  text-decoration: line-through;
+  font-size: 13px;
+  color: gray;
+}
+
+.ribbon {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #ff4d91;
+  color: white;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.dropdowns {
+  display: none;
+  margin-top: 10px;
+}
+
+.dropdowns select {
+  margin: 5px 5px 5px 0;
+  padding: 5px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.delivery {
+  color: #ff4d91;
+  font-weight: bold;
+}
+
+.total {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff4d91;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
